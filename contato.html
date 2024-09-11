@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,i=1.0">
-    <meta name="keywords" content="Contato,Contato Senai,Telefone,Telefone Senai>
-    <meta name "author" content="Henrique Lázaro">
-    <title>Contato</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="produto.html">Contato</a></li>
-                <li><a href="sobre.html">Contato</a></li>
-            </ul>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Contato, Contato Senai, Telefone, Telefone Senai">
+        <meta name="author" content="Leonardo, João, Nicolas, Júlia, Maria Paula, Emanuel, Isadora, Henrique">
+        <title>Contato</title>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="produto.html">Produto</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
         
-    </header>
-    <ul>
-        <li>
-            <a href="contato.html">CONTATO</a>
-        </li>
-        <li>
-            <a href="produto.html">PRODUTO</a>
-        </li>
-        <li>
-            <a href="sobre.html">SOBRE</a>
-        </li>
-    </ul>
+        <main>
+            <section>
+                <h1>Contato</h1>
 
-    <main>
+                <ul>
+                    <li><strong>Telefone:</strong> +55 (16) 9 9999-8888</li>
+                    <li><strong>E-mail:</strong> criacaopaginaweb@mkt.com</li>
+                    <li><strong>Instagram:</strong> @criacaopaginaweb</li>
+                </ul>
+            </section>
 
-        <h1>Contato</h1>
+            <section>
+                <h2>Formulário</h2>
+                <form action="/enviarContato" method="post">
+                    <label for="nome">Nome</label>
+                    <input 
+                        type="text" 
+                        name="nome" 
+                        id="nome" 
+                        placeholder="Fulano da Silva" 
+                        required
+                    ><br><br>
 
-        <ul>
-            <li><strong>TELEFONE:</strong> +55(16) 99157-3079</li>
-            <li><strong>E-MAIL:</strong> criacaopaginaweb@mkt.com</li>
-            <li><strong>INSTAGRAM:</strong>@mktpaginawebsenai</li>
-        </ul>
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        placeholder="abc@emai.com" 
+                        required
+                    ><br><br>
 
-        <h1>Formulário</h1>
-        <form action="/enviarContato" methad="post">
-            <label for="nome">E-mail</label>
-            <input type="text" name="E-mail" id="idade" min="0" max="110" required>
+                    <label for="idade">Idade</label>
+                    <input 
+                        type="number"
+                        name="idade" 
+                        id="idade" 
+                        min="0" 
+                        max="110"
+                        required
+                    ><br><br>
 
-            <label for="E-mail">E-mail</label>
-            <input type="email" name="e-mail" id="e-mail" placeholder="fulano@gmail.com" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea 
+                        name="mensagem" 
+                        id="mensagem"
+                        maxlength="400"
+                        cols="40"
+                        rows="4"
+                        placeholder="Digite o que deseja" 
+                        required
+                    ></textarea><br><br>
 
-            <label for="idade">E-mail</label>
-            <input type="number" name="idade" id="idade" min="0" max="110" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
 
-            <label for="mensagem">E-mail</label>
-            <input name="mensagem" id="mensagem" max="400" rows="4" placeholder="Digite oque deseja" required>
-
-            <button type="Submit">Enviar</button>
-            </form>
-    </main>
-    <footer>
-        <p>&copy; 2024 Página criada pelos alunos da turma de Criação de página Web com Marketing digital</p>
-    </footer>
-      
-</body>
+        <footer>
+            <p>&copy; 2024 Página criada pelos alunos da 
+                turma de Criação de Página Web com Marketing Digital</p>
+        </footer>
+    </body>
 </html>
-
-    
-            

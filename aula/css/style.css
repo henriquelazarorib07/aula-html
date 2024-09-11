@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+
+}
+h1, h2 { 
+    color: darkgreen;
+
+}
+
+#meuid {
+    color:midnightblue;
+}
+
+#turma_criacao_de_pagina_web {
+    color:rgb(153, 34, 13);
+}
+#turma_de_python {
+    color:orangered;
+}
